@@ -15,10 +15,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [ThirdFragment.newInstance] factory method to
+ * Use the [secondSecondFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ThirdFragment : Fragment() {
+class secondSecondFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -36,16 +36,15 @@ class ThirdFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val viewThird = inflater.inflate(R.layout.fragment_third, container, false)
-        val btnGoFin = viewThird.findViewById<Button>(R.id.btnGoFinal)
+        val viewSecSec = inflater.inflate(R.layout.fragment_second_second, container, false)
+        val btnGoToFin = viewSecSec.findViewById<Button>(R.id.btnGoFinal)
 
-        btnGoFin.setOnClickListener {
-            val navToFin = ThirdFragmentDirections.actionThirdFragmentToFinalFragment()
-            Navigation.findNavController(viewThird).navigate(navToFin)
+        btnGoToFin.setOnClickListener {
+            val navToFin = secondSecondFragmentDirections.actionSecondSecondFragmentToFinalFragment()
+            Navigation.findNavController(viewSecSec).navigate(navToFin)
         }
 
-
-        return viewThird
+        return viewSecSec
     }
 
     companion object {
@@ -55,12 +54,12 @@ class ThirdFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment ThirdFragment.
+         * @return A new instance of fragment secondSecondFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            ThirdFragment().apply {
+            secondSecondFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

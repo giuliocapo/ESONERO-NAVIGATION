@@ -17,12 +17,20 @@
         android:id="@+id/secondFragment"
         android:name="com.example.navigationb.SecondFragment"
         android:label="Profile"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_secondSecondFragment"
+            app:destination="@id/secondSecondFragment" />
+    </fragment>
     <fragment
         android:id="@+id/thirdFragment"
         android:name="com.example.navigationb.ThirdFragment"
         android:label="Settings"
-        tools:layout="@layout/fragment_third" />
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_thirdFragment_to_finalFragment"
+            app:destination="@id/finalFragment" />
+    </fragment>
     <fragment
         android:id="@+id/splash_Fragment"
         android:name="com.example.navigationb.SplashFragment"
@@ -45,5 +53,18 @@
         android:id="@+id/finalFragment"
         android:name="com.example.navigationb.finalFragment"
         android:label="fragment_final"
-        tools:layout="@layout/fragment_final" />
+        tools:layout="@layout/fragment_final" >
+        <action
+            android:id="@+id/action_finalFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondSecondFragment"
+        android:name="com.example.navigationb.secondSecondFragment"
+        android:label="fragment_second_second"
+        tools:layout="@layout/fragment_second_second" >
+        <action
+            android:id="@+id/action_secondSecondFragment_to_finalFragment"
+            app:destination="@id/finalFragment" />
+    </fragment>
 </navigation>
