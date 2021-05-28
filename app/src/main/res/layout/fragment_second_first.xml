@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    tools:context=".secondFirstFragment">
 
     <TextView
         android:id="@+id/tv_1_2"
@@ -13,19 +13,20 @@
         android:layout_marginStart="177dp"
         android:layout_marginTop="324dp"
         android:layout_marginEnd="176dp"
-        android:text="First Fragment"
+        android:text="Second First Fragment"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnSecondFirstFragment"
+        android:id="@+id/btnGoFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Navigate to fragment"
+        android:text="Go to Final Fragment"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_1_2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

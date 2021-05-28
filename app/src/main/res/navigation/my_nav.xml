@@ -8,7 +8,11 @@
         android:id="@+id/firstFragment"
         android:name="com.example.navigationb.FirstFragment"
         android:label="Home"
-        tools:layout="@layout/fragment_first" />
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFirstFragment"
+            app:destination="@id/secondFirstFragment" />
+    </fragment>
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.example.navigationb.SecondFragment"
@@ -28,4 +32,18 @@
             android:id="@+id/action_splash_Fragment_to_firstFragment"
             app:destination="@id/firstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/secondFirstFragment"
+        android:name="com.example.navigationb.secondFirstFragment"
+        android:label="fragment_second_first"
+        tools:layout="@layout/fragment_second_first" >
+        <action
+            android:id="@+id/action_secondFirstFragment_to_finalFragment"
+            app:destination="@id/finalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalFragment"
+        android:name="com.example.navigationb.finalFragment"
+        android:label="fragment_final"
+        tools:layout="@layout/fragment_final" />
 </navigation>

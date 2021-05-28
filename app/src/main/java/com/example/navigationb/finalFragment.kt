@@ -5,13 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageView
-import androidx.core.view.isVisible
-import androidx.navigation.Navigation
-import com.example.navigationb.MainActivity
-import com.example.navigationb.MainActivity.Companion.binding
-import com.example.navigationb.databinding.ActivityMainBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -20,18 +13,16 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [FirstFragment.newInstance] factory method to
+ * Use the [finalFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class FirstFragment : Fragment() {
+class finalFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
@@ -42,17 +33,8 @@ class FirstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding.bottomNavigationView.isVisible = true
-
-        val viewFirst =inflater.inflate(R.layout.fragment_first, container, false)
-        val btnFS = viewFirst.findViewById<Button>(R.id.btnSecondFirstFragment)
-        btnFS.setOnClickListener {
-
-            val navToSF = FirstFragmentDirections.actionFirstFragmentToSecondFirstFragment()
-            Navigation.findNavController(viewFirst).navigate(navToSF)
-        }
-
-        return viewFirst
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_final, container, false)
     }
 
     companion object {
@@ -62,12 +44,12 @@ class FirstFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment FirstFragment.
+         * @return A new instance of fragment finalFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            FirstFragment().apply {
+            finalFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
