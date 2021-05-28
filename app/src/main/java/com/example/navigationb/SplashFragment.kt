@@ -25,7 +25,7 @@ class SplashFragment : Fragment() {
         Handler().postDelayed({
             findNavController().navigate(R.id.action_splash_Fragment_to_firstFragment)
 
-        }, 3000)
+        }, 500)
         return inflater.inflate(R.layout.fragment_splash_, container, false)
     }
 
