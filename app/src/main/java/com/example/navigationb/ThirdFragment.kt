@@ -40,8 +40,8 @@ class ThirdFragment : Fragment() {
         val btnGoFin = viewThird.findViewById<Button>(R.id.btnGoFinal)
 
         btnGoFin.setOnClickListener {
-            val navToFin = ThirdFragmentDirections.actionThirdFragmentToFinalFragment()
-            Navigation.findNavController(viewThird).navigate(navToFin)
+            val navToF = ThirdFragmentDirections.actionThirdFragmentToFinalFragment()
+            Navigation.findNavController(viewThird).navigate(navToF)
         }
 
 
