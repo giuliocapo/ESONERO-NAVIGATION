@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setupWithNavController(navController)
 
         bottomNavigationView.isVisible = false
+        supportActionBar?.hide()
 
     }
 }
