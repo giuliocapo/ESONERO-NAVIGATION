@@ -26,8 +26,6 @@ class FirstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        //image
-        //ImageView.inflate(R.drawable.run1)
 
         binding.bottomNavigationView.isVisible = true
 
