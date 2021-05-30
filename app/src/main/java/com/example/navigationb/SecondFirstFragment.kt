@@ -9,7 +9,7 @@ import android.widget.Button
 import androidx.navigation.Navigation
 
 
-class secondFirstFragment : Fragment() {
+class SecondFirstFragment : Fragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -19,7 +19,7 @@ class secondFirstFragment : Fragment() {
 
         val btnGoFin = viewSecF.findViewById<Button>(R.id.btnGoFinal)
         btnGoFin.setOnClickListener {
-            val navToFinal = secondFirstFragmentDirections.actionSecondFirstFragmentToFinalFragment()
+            val navToFinal = SecondFirstFragmentDirections.actionSecondFirstFragmentToFinalFragment()
             Navigation.findNavController(viewSecF).navigate(navToFinal)
         }
 

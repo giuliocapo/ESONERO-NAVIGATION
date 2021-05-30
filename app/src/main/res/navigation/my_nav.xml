@@ -49,7 +49,7 @@
     </fragment>
     <fragment
         android:id="@+id/secondFirstFragment"
-        android:name="com.example.navigationb.secondFirstFragment"
+        android:name="com.example.navigationb.SecondFirstFragment"
         android:label="fragment_second_first"
         tools:layout="@layout/fragment_second_first" >
         <action
@@ -58,7 +58,7 @@
     </fragment>
     <fragment
         android:id="@+id/finalFragment"
-        android:name="com.example.navigationb.finalFragment"
+        android:name="com.example.navigationb.FinalFragment"
         android:label="fragment_final"
         tools:layout="@layout/fragment_final" >
         <action
@@ -67,7 +67,7 @@
     </fragment>
     <fragment
         android:id="@+id/secondSecondFragment"
-        android:name="com.example.navigationb.secondSecondFragment"
+        android:name="com.example.navigationb.SecondSecondFragment"
         android:label="fragment_second_second"
         tools:layout="@layout/fragment_second_second" >
         <action

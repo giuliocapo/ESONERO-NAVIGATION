@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.Navigation
 
-class finalFragment : Fragment() {
+class FinalFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -19,7 +19,7 @@ class finalFragment : Fragment() {
         val viewFin = inflater.inflate(R.layout.fragment_final, container, false)
         val btnGoHome = viewFin.findViewById<Button>(R.id.btnGoHome)
         btnGoHome.setOnClickListener {
-            val navToHome = finalFragmentDirections.actionFinalFragmentToFirstFragment()
+            val navToHome = FinalFragmentDirections.actionFinalFragmentToFirstFragment()
             Navigation.findNavController(viewFin).navigate(navToHome)
         }
 
