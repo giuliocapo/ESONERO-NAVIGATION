@@ -31,9 +31,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="249dp"
-        android:layout_height="363dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="177dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="44dp"
         android:src="@drawable/run1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
