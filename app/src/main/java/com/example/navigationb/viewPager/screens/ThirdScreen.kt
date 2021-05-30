@@ -28,7 +28,6 @@ class ThirdScreen : Fragment() {
             Navigation.findNavController(viewT).navigate(navToHome)
             onTutFinished()
         }
-
         return viewT
     }
 
