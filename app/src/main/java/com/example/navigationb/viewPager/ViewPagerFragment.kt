@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
+import androidx.viewpager2.widget.ViewPager2
 import com.example.navigationb.R
 import com.example.navigationb.viewPager.screens.FirstScreen
 import com.example.navigationb.viewPager.screens.SecondScreen
@@ -21,11 +22,11 @@ class ViewPagerFragment : Fragment() {
 
         val fragmenList = arrayListOf<Fragment>( FirstScreen(), SecondScreen(), ThirdScreen() )
 
-        val adapter = ViewPagerAdapter(fragmenList, requireActivity().supportFragmentManager, lifecycle) as PagerAdapter
+        val adapter = ViewPagerAdapter(fragmenList, requireActivity().supportFragmentManager, lifecycle)
 
-        viewPF.findViewById<ViewPager>(R.id.viewPager).adapter = adapter
+        viewPF.findViewById<ViewPager2>(R.id.viewPager).adapter = adapter
 
-        //minuto 6:56 di Stevdza
+
 
         return viewPF
     }

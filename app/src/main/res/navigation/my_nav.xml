@@ -37,8 +37,15 @@
         android:label="Navigation"
         tools:layout="@layout/fragment_splash_" >
         <action
+            android:id="@+id/action_splash_Fragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/splash_Fragment"
+            app:popUpToInclusive="true" />
+        <action
             android:id="@+id/action_splash_Fragment_to_firstFragment"
-            app:destination="@id/firstFragment" />
+            app:destination="@id/firstFragment"
+            app:popUpTo="@id/splash_Fragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/secondFirstFragment"
@@ -66,5 +73,16 @@
         <action
             android:id="@+id/action_secondSecondFragment_to_finalFragment"
             app:destination="@id/finalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.navigationb.viewPager.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:popUpTo="@id/viewPagerFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

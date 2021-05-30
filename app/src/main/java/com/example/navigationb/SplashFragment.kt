@@ -1,5 +1,6 @@
 package com.example.navigationb
 
+import android.content.Context
 import android.os.Bundle
 import android.os.Handler
 import androidx.fragment.app.Fragment
@@ -23,11 +24,24 @@ class SplashFragment : Fragment() {
         // Inflate the layout for this fragment
 
         Handler().postDelayed({
-            findNavController().navigate(R.id.action_splash_Fragment_to_firstFragment)
+            if(checkIfTut()){
+                val navToFirst = SplashFragmentDirections.actionSplashFragmentToFirstFragment()
+                findNavController().navigate(navToFirst)
+            }else{
+                val navToTut = SplashFragmentDirections.actionSplashFragmentToViewPagerFragment()
+                findNavController().navigate(navToTut)
+            }
+
 
         }, 3000)
         return inflater.inflate(R.layout.fragment_splash_, container, false)
     }
+
+    private fun checkIfTut():Boolean{
+        val sharedPref = requireActivity().getSharedPreferences("Tutorial", Context.MODE_PRIVATE)
+        return sharedPref.getBoolean("Finish", false)
+    }
+
 
 }
 

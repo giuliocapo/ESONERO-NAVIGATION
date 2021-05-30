@@ -27,11 +27,8 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.fragment)
         val appBarConfiguration = AppBarConfiguration(setOf(R.id.firstFragment,R.id.secondFragment, R.id.thirdFragment))
         setupActionBarWithNavController(navController, appBarConfiguration)
-
         bottomNavigationView.setupWithNavController(navController)
-
         bottomNavigationView.isVisible = false
         supportActionBar?.hide()
-
     }
 }
