@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.navigation.Navigation
-import androidx.viewpager2.widget.ViewPager2
 import com.example.navigationb.R
 import com.example.navigationb.viewPager.ViewPagerFragmentDirections
 

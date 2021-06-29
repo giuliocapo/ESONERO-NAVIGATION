@@ -18,7 +18,7 @@ class SecondFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val viewSec= inflater.inflate(R.layout.fragment_second, container, false)
-        var btnSecSec = viewSec.findViewById<Button>(R.id.btnSecondSecondFragment)
+        val btnSecSec = viewSec.findViewById<Button>(R.id.btnSecondSecondFragment)
 
         btnSecSec.setOnClickListener {
             val navToSEcSec = SecondFragmentDirections.actionSecondFragmentToSecondSecondFragment()
