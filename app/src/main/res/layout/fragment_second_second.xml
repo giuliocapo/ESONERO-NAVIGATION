@@ -13,7 +13,7 @@
         android:layout_marginStart="177dp"
         android:layout_marginTop="324dp"
         android:layout_marginEnd="176dp"
-        android:text="Second Second Fragment"
+        android:text="@string/fragment_2_1"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

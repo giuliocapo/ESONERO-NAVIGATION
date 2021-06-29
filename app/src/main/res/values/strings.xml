@@ -2,4 +2,10 @@
     <string name="app_name">NavigationB</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_1_0">Fragment 1.0</string>
+    <string name="fragment_1_1">Fragment 1.1</string>
+    <string name="fragment_2_0">Fragment 2.0</string>
+    <string name="fragment_2_1">Fragment 2.1</string>
+    <string name="fragment_3_0">Fragment 3.0</string>
+    <string name="final_fragment">Final Fragment</string>
 </resources>
