@@ -26,9 +26,6 @@ class ViewPagerFragment : Fragment() {
 
         viewPF.findViewById<ViewPager2>(R.id.viewPager).adapter = adapter
 
-
-
         return viewPF
     }
-
 }
