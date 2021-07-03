@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NavigationB</string>
+    <string name="final_fragment">Fragment Finale</string>
+    <string name="profile">Profilo</string>
+    <string name="settings">Impostazioni</string>
+    <string name="tv_go_to_home">Vai alla Home</string>
+    <string name="final_fragment_image">Fragment Finale!</string>
+    <string name="navigate_to_fragment">Naviga verso il fragment</string>
+    <string name="fragment_1_0_image">Immagine fragment 1.0</string>
+    <string name="fragment_2_0_image">Immagine fragment 2.0</string>
+    <string name="fragment_1_1_images">Immagine fragment 1.1</string>
+    <string name="next">Avanti</string>
+    <string name="fragment_2_1_image">Immagine Fragment 2.1</string>
+    <string name="finish">Fine</string>
+    <string name="go_to_final_fragment">Vai al Fragment Finale</string>
+</resources>
