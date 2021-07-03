@@ -18,9 +18,9 @@ class ViewPagerFragment : Fragment() {
         // Inflate the layout for this fragment
         val viewPF = inflater.inflate(R.layout.fragment_view_pager, container, false)
 
-        val fragmenList = arrayListOf( FirstScreen(), SecondScreen(), ThirdScreen() )
+        val fragmentList = arrayListOf( FirstScreen(), SecondScreen(), ThirdScreen() )
 
-        val adapter = ViewPagerAdapter(fragmenList, requireActivity().supportFragmentManager, lifecycle)
+        val adapter = ViewPagerAdapter(fragmentList, requireActivity().supportFragmentManager, lifecycle)
 
         viewPF.findViewById<ViewPager2>(R.id.viewPager).adapter = adapter
 

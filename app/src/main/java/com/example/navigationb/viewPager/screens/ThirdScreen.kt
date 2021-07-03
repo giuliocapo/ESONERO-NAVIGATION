@@ -14,6 +14,8 @@ import com.example.navigationb.viewPager.ViewPagerFragmentDirections
 
 class ThirdScreen : Fragment() {
 
+    private val tutorial = "Tutorial"
+    private val finish = "Finish"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,9 +33,9 @@ class ThirdScreen : Fragment() {
     }
 
     private fun onTutFinished(){
-        val sharedPref = requireActivity().getSharedPreferences("Tutorial", Context.MODE_PRIVATE)
+        val sharedPref = requireActivity().getSharedPreferences(tutorial, Context.MODE_PRIVATE)
         val editor = sharedPref.edit()
-        editor.putBoolean("Finish", true)
+        editor.putBoolean(finish, true)
         editor.apply()
     }
 }
